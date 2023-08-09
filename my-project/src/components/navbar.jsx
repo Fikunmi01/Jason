@@ -16,12 +16,12 @@ export const Navbar = () => {
     {
       id: 3,
       name: "Gallery",
-      route: "d",
+      route: "/gallery",
     },
     {
       id: 4,
       name: "Booking",
-      route: "dd",
+      route: "/booking",
     },
     {
       id: 5,

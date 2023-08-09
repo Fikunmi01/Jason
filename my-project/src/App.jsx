@@ -4,6 +4,8 @@ import "./App.css";
 import { Landingpage } from "./pages/landingpage";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { About } from "./pages/about-page";
+import { Gallery } from "./pages/gallery";
+import { Booking } from "./pages/booking";
 
 function App() {
   const { scrollYprogress } = useScroll();
@@ -29,10 +31,11 @@ function App() {
         </div>
         <div className="w-4/5">
           <Routes>
-            <Route path="/" element={<Landingpage />}  />
+            <Route path="/" element={<Landingpage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/booking" element={<Booking />} />
           </Routes>
-      
         </div>
       </motion.div>
     </>
