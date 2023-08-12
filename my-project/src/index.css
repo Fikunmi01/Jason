@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.vertical {
+  border-left: 1px solid black;
+  height: 40px;
+  position:absolute;
+  left: 50%;
+}
+
+.outlineNone {
+  border-bottom: 0.1rem solid #151514;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+.submitBtn{
+  color: #fff;
+  background-color: #151514;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Gap {
+  width: 29rem;
+  margin-bottom: 1rem;
+  height: 23rem;
+  display: flex;
+}
+
+
+.Gaps {
+  width: 29rem;
+  margin-bottom: 1rem;
+}
+
+.Gap:hover {
+  transform: scale(1.05);
+  transition: 0.5s all ease-in-out;
+}
+
+.uils{
+  font-size: x-large;
+}

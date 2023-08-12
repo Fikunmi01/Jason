@@ -10,7 +10,7 @@ export default {
     colors: {
       'white': '#fffbf7',
       'black': '#151514',
-      'offWhite':'#0F0E4D'
+      'offWhite':'#0F0E4D',
     },
     extend: {},
     

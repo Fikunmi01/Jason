@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  function handleClick() {
+    setOpen(!open);
+  }
   const navLink = [
     {
       id: 1,
@@ -25,8 +29,8 @@ export const Navbar = () => {
     },
     {
       id: 5,
-      name: "Other",
-      route: "dd",
+      name: "Blog",
+      route: "/blog",
     },
     {
       id: 6,
@@ -34,19 +38,24 @@ export const Navbar = () => {
       route: "dd",
     },
   ];
+
   return (
     <>
-      <div className="py-6 font-sans text-lg font-medium relative">
+      <div className=" lg:py-6 lg:visible hidden font-sans lg:text-lg lg:flex flex-col lg:flex-row font-medium relative">
         {navLink.map((item) => (
           <div key={item.id} className="inline-flex left-96 relative bg-white">
             <ul className="relative">
               <li className="mr-10 text-black font-sans opacity-95">
                 <Link to={item.route}>{item.name}</Link>
+                {/* <i class="uil uil-grip-horizontal-line"></i> */}
+
                 {/* {item.name} */}
               </li>
             </ul>
           </div>
         ))}
+
+        
       </div>
     </>
   );

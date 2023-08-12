@@ -44,7 +44,7 @@ export const Hero = () => {
               <SwiperSlide key={item.id}>
                 <img
                   src={item.imgSrc}
-                  className="h-[85vh] mb-16 w-full"
+                  className="px-4 lg:h-[85vh] mb-16 w-full"
                   alt=""
                 />
               </SwiperSlide>

@@ -223,13 +223,13 @@ export const Menu = () => {
   ];
 
   return (
-    <div className="relative font-sans">
-      <div className="border-b-2 mb-10 border-spacing-y-6">
+    <div className="relative font-sans px-4 lg:px-0">
+      <div className="border-b-2 mb-6 lg:mb-10 border-spacing-y-6">
         <h2 className="text-3xl pb-6 text-black font-bold">EXPLORE MENU</h2>
       </div>
 
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex lg:flex-col lg:gap-y-6 pb-5 gap-x-5">
           <p
             className={`text-2xl font-sans font-bold cursor-pointer ${
               snack ? "text-black" : "text-offWhite opacity-50"
@@ -257,7 +257,7 @@ export const Menu = () => {
         </div>
 
         <motion.div
-          className="grid grid-cols-2 gap-x-16 gap-y-6 mb-20"
+          className="lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 mb-20 "
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 2 }}
@@ -266,7 +266,7 @@ export const Menu = () => {
             <>
               {snackArray.map((item) => (
                 <div
-                  className={`flex relative justify-between ${
+                  className={`flex relative justify-between pb-6 lg:pb-0${
                     snack ? "visible" : "hidden"
                   }`}
                 >
@@ -286,35 +286,14 @@ export const Menu = () => {
               ))}
             </>
           ) : (
-            <>
-              {snackArray.map((item) => (
-                <div
-                  className={`flex justify-between hidden ${
-                    snack ? "visible" : "hidden"
-                  }`}
-                >
-                  <span>
-                    <h3 className="text-lg text-black font-bold">
-                      {item.mealName}
-                    </h3>
-                    <p className="text-sm text-black opacity-90 font-medium">
-                      {item.mealDetails}
-                    </p>
-                  </span>
-
-                  <p className="font-bold text-black text-xl">
-                    {item.mealRemaining}
-                  </p>
-                </div>
-              ))}
-            </>
+            <></>
           )}
 
           {meal ? (
             <>
               {eatArray.map((item) => (
                 <div
-                  className={`flex justify-between ${
+                  className={`flex justify-between pb-6 lg:pb-0${
                     meal ? "visible" : "hidden"
                   }`}
                 >
@@ -334,35 +313,14 @@ export const Menu = () => {
               ))}
             </>
           ) : (
-            <>
-              {eatArray.map((item) => (
-                <div
-                  className={`flex justify-between relative ${
-                    meal ? "visible" : "hidden"
-                  }`}
-                >
-                  <span>
-                    <h3 className={`text-lg text-black font-bold`}>
-                      {item.mealName}
-                    </h3>
-                    <p className="text-sm text-black opacity-90 font-medium">
-                      {item.mealDetails}
-                    </p>
-                  </span>
-
-                  <p className="font-bold text-black text-xl">
-                    {item.mealRemaining}
-                  </p>
-                </div>
-              ))}
-            </>
+            <></>
           )}
 
           {drink ? (
             <>
               {drinkArray.map((item) => (
                 <div
-                  className={`flex justify-between ${
+                  className={`flex justify-between pb-6 lg:pb-0 ${
                     drink ? "visible" : "hidden"
                   }`}
                 >
@@ -382,28 +340,7 @@ export const Menu = () => {
               ))}
             </>
           ) : (
-            <>
-              {drinkArray.map((item) => (
-                <div
-                  className={`flex justify-between relative ${
-                    drink ? "visible" : "hidden"
-                  }`}
-                >
-                  <span>
-                    <h3 className="text-lg text-black font-bold">
-                      {item.mealName}
-                    </h3>
-                    <p className="text-sm text-black opacity-90 font-medium">
-                      {item.mealDetails}
-                    </p>
-                  </span>
-
-                  <p className="font-bold text-black text-xl">
-                    {item.mealRemaining}
-                  </p>
-                </div>
-              ))}
-            </>
+            <></>
           )}
         </motion.div>
       </div>
