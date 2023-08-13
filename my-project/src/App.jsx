@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import { ScrollRestoration } from "react-router-dom";
 import "./App.css";
 import { Landingpage } from "./pages/landingpage";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -11,7 +10,7 @@ import { Blog } from "./pages/blog";
 
 function App() {
   const { scrollYprogress } = useScroll();
-  
+
   const scaleX = useSpring(scrollYprogress, {
     stiffness: 100,
     damping: 30,
@@ -19,7 +18,7 @@ function App() {
   });
 
   const [open, setOpen] = useState(false);
-  
+
   function handleClick() {
     setOpen(!open);
   }
@@ -50,9 +49,8 @@ function App() {
       name: "Blog",
       route: "/blog",
     },
-
   ];
-  
+
   return (
     <>
       <motion.div
@@ -68,7 +66,9 @@ function App() {
           </h1>
 
           <div className="flex justify-between px-4 py-5 relative items-center">
-            <h1 className="font-semibold tracking-wider font-sans text-3xl lg:hidden">JASON</h1>
+            <h1 className="font-semibold tracking-wider font-sans text-3xl lg:hidden">
+              JASON
+            </h1>
             {open ? (
               <div>
                 <i

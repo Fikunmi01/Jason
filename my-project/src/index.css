@@ -5,9 +5,7 @@
 
 .vertical {
   border-left: 1px solid black;
-  height: 40px;
-  position:absolute;
-  left: 50%;
+  height: 50px;
 }
 
 .outlineNone {
@@ -46,3 +44,4 @@
 .uils{
   font-size: x-large;
 }
+

@@ -30,31 +30,31 @@ export const Gallery = () => {
     <>
       <div>
         <Navbar />
-        <div className="pb-20">
+        <div className="pb-5 px-4 lg:px-0 lg:pb-20">
           <img src={imgItems[1].imgSrc} alt="" />
         </div>
 
-        <div className="flex gap-16 mb-20">
-          <img src="/assets/image4.jpg" className="w-3/5" alt="" />
-          <img src="/assets/image5.jpg" alt="" className="w-1/3" />
+        <div className="flex gap-y-5 lg:gap-y-0 flex-col lg:flex-row px-4 lg:px-0 lg:gap-16 lg:mb-20">
+          <img src="/assets/image4.jpg" className="lg:w-3/5" alt="" />
+          <img src="/assets/image5.jpg" alt="" className="lg:w-1/3 pb-5" />
         </div>
 
-        <div className="flex gap-10 pb-28">
+        <div className="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row px-4 lg:px-0 pb-5 lg:gap-10 lg:pb-28">
           <img
             src="/assets/image6.jpg"
-            className="w-1/2 h-[90vh] relative"
+            className="lg:w-1/2 lg:h-[90vh] relative"
             alt=""
           />
           <img
             src="/assets/image1.jpg"
-            className="w-1/2 h-[90vh] relative"
+            className="lg:w-1/2 lg:h-[90vh] relative"
             alt=""
           />
         </div>
 
-        <div className="flex gap-10 pb-20">
-          <img src="/assets/image3.jpg" className="w-96" alt="" />
-          <img src="/assets/image2.jpg" className="w-3/5" alt="" />
+        <div className="flex flex-col lg:flex-row gap-y-5 lg:gap-y-0 px-4 lg:px-0 lg:gap-10 pb-20">
+          <img src="/assets/image3.jpg" className="lg:w-96" alt="" />
+          <img src="/assets/image2.jpg" className="lg:w-3/5" alt="" />
         </div>
 
         <Footer/>

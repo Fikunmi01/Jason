@@ -74,42 +74,50 @@ export const Menu = () => {
 
   const snackArray = [
     {
+      id:1,
       mealName: "BRUSCHETTA CAPRESE",
       mealDetails: "Tomatoes, mozzarella, basil",
       mealRemaining: `${numOfCaprese}`,
     },
     {
+      id:2,
       mealName: "GARLIC BUTTER SHRIMP",
       mealDetails: "Shrimp, garlic, butter",
       mealRemaining: `${numOfShrimp}`,
     },
     {
+      id:3,
       mealName: "SPINACH ARTICHOKE DIP",
       mealDetails: "Spinach, artichokes, cream cheese",
       mealRemaining: `${numOfSpinach}`,
     },
 
     {
+      id:4,
       mealName: "STUFFED MUSHROOMS",
       mealDetails: "Mushrooms, cream cheese, breadcrumbs",
       mealRemaining: `${numOfMushrooms}`,
     },
     {
+      id:5,
       mealName: "CHICKEN SATAY",
       mealDetails: "Chicken, peanut sauce, cucumber",
       mealRemaining: `${numOfChickenSatay}`,
     },
     {
+      id:6,
       mealName: "CRISPY CALAMARI",
       mealDetails: "Calamari, flour, lemon wedges",
       mealRemaining: `${numOfCalamari}`,
     },
     {
+      id:7,
       mealName: "LOADED NACHOS",
       mealDetails: "Tortilla chips, cheese, salsa, guacamole",
       mealRemaining: `${numOfNachos}`,
     },
     {
+      id:8,
       mealName: "BUFFALO CHICKEN WINGS",
       mealDetails: "Chicken wings, buffalo sauce, blue cheese dip",
       mealRemaining: `${numOfWings}`,
@@ -118,51 +126,61 @@ export const Menu = () => {
 
   const eatArray = [
     {
+      id:1,
       mealName: "SPICY TOFU STIR-FRY",
       mealDetails: "Tofu, bell peppers, broccoli, soy sauce",
       mealRemaining: `${numOfSpicytofu}`,
     },
     {
+      id:2,
       mealName: "SHRIMP PAD THAI",
       mealDetails: "Shrimp, rice noodles, bean sprouts, peanuts",
       mealRemaining: `${numOfShrimppad}`,
     },
     {
+      id:3,
       mealName: "MEDITERRANEAN LAMB",
       mealDetails: "Lamb chops, lemon, oregano, olive oil",
       mealRemaining: `${numOfLamb}`,
     },
     {
+      id:4,
       mealName: "MUSHROOM RISOTTO",
       mealDetails: "Arborio rice, mushrooms, Parmesan cheese",
       mealRemaining: `${numOfMushroomrisotto}`,
     },
     {
+      id:5,
       mealName: "TERIYAKI SALMON",
       mealDetails: "Salmon fillet, teriyaki sauce, sesame seeds, green onions",
       mealRemaining: `${numOfSalmon}`,
     },
     {
+      id:6,
       mealName: "BEEF FAJITAS",
       mealDetails: "Beef strips, bell peppers, onions, fajita seasoning",
       mealRemaining: `${numOfBeef}`,
     },
     {
+      id:7,
       mealName: "BBQ RIBS",
       mealDetails: "Pork ribs, BBQ sauce, brown sugar, paprika",
       mealRemaining: `${numOfBbqribs}`,
     },
     {
+      id:8,
       mealName: "VEGGIE CURRY",
       mealDetails: "Mixed vegetables, curry paste, coconut milk",
       mealRemaining: `${numOfVeggie}`,
     },
     {
+      id:9,
       mealName: "CHICKEN PARMESAN",
       mealDetails: "Chicken breast, marinara sauce, mozzarella cheese, basil",
       mealRemaining: `${numOfChickenparmesan}`,
     },
     {
+      id:10,
       mealName: "CAJUN GRILLED SHRIMP",
       mealDetails: "Shrimp, Cajun seasoning, lemon, butter",
       mealRemaining: `${numOfCajun}`,
@@ -171,51 +189,61 @@ export const Menu = () => {
 
   const drinkArray = [
     {
+      id:1,
       mealName: "MOJITO",
       mealDetails: "Rum, lime juice, mint leaves, soda water",
       mealRemaining: `${numOfMojito}`,
     },
     {
+      id:2,
       mealName: "NEGRONI",
       mealDetails: "Gin, Campari, sweet vermouth, orange twist",
       mealRemaining: `${numOfNegroni}`,
     },
     {
+      id:3,
       mealName: "MARGARITA",
       mealDetails: "Tequila, lime juice, triple sec, salt rim",
       mealRemaining: `${numOfMargarita}`,
     },
     {
+      id:4,
       mealName: "ESPRESSO MARTINI",
       mealDetails: "Vodka, coffee liqueur, espresso, sugar syrup",
       mealRemaining: `${numOfEspressomartini}`,
     },
     {
+      id:5,
       mealName: "OLD FASHIONED",
       mealDetails: "Bourbon, sugar cube, Angostura bitters, orange peel",
       mealRemaining: `${numOfOldfashioned}`,
     },
     {
+      id:6,
       mealName: "MOJITO MOCKTAIL",
       mealDetails: "Mint leaves, lime juice, soda water, simple syrup",
       mealRemaining: `${numOfMojitomocktail}`,
     },
     {
+      id:7,
       mealName: "COSMOPOLITAN",
       mealDetails: "Vodka, cranberry juice, lime juice, orange liqueur",
       mealRemaining: `${numOfCosmopolitan}`,
     },
     {
+      id:8,
       mealName: "VIRGIN PINA COLADA",
       mealDetails: "Coconut cream, pineapple juice",
       mealRemaining: `${numOfVirginpinacolada}`,
     },
     {
+      id:9,
       mealName: "PIÑA COLADA",
       mealDetails: "Rum, coconut cream, pineapple juice",
       mealRemaining: `${numOfPinacolada}`,
     },
     {
+      id:10,
       mealName: "SHIRLEY TEMPLE",
       mealDetails: "Ginger ale, grenadine, maraschino cherry garnish",
       mealRemaining: `${numOfShirleytemple}`,
@@ -266,6 +294,7 @@ export const Menu = () => {
             <>
               {snackArray.map((item) => (
                 <div
+                key={item.id}
                   className={`flex relative justify-between pb-6 lg:pb-0${
                     snack ? "visible" : "hidden"
                   }`}
@@ -293,6 +322,8 @@ export const Menu = () => {
             <>
               {eatArray.map((item) => (
                 <div
+                key={item.id}
+
                   className={`flex justify-between pb-6 lg:pb-0${
                     meal ? "visible" : "hidden"
                   }`}
@@ -320,6 +351,8 @@ export const Menu = () => {
             <>
               {drinkArray.map((item) => (
                 <div
+                key={item.id}
+
                   className={`flex justify-between pb-6 lg:pb-0 ${
                     drink ? "visible" : "hidden"
                   }`}
@@ -345,9 +378,9 @@ export const Menu = () => {
         </motion.div>
       </div>
 
-      <div className="flex gap-16 mb-20">
-        <img src="/assets/image4.jpg" className="w-3/5" alt="" />
-        <img src="/assets/image5.jpg" alt="" className="w-1/3" />
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 mb-16 lg:mb-20">
+        <img src="/assets/image4.jpg" className="lg:w-3/5" alt="" />
+        <img src="/assets/image5.jpg" alt="" className="lg:w-1/3" />
       </div>
     </div>
   );
