@@ -6,42 +6,42 @@ export const Blog = () => {
   const blogPost = [
     {
       id: 1,
-      imgSrc: "./assets/blog2.jpg",
+      imgSrc: "/assets/blog2.jpg",
       postTitle: "SEA TO PLATE: COASTAL CUISINE FOR SEAFOOD LOVERS",
       postDescription:
         "Discover coastal cuisine and indulge in the freshest seafood delights.",
     },
     {
       id: 2,
-      imgSrc: "./assets/image6.jpg",
+      imgSrc: "/assets/image6.jpg",
       postTitle: "CRAFTING COCKTAILS: CREATIVE LIBATIONS AND MIXOLOGY MAGIC",
       postDescription:
         "Unveiling the art of mixology with innovative and imaginative cocktails.",
     },
     {
       id: 3,
-      imgSrc: "./assets/image5.jpg",
+      imgSrc: "/assets/image5.jpg",
       postTitle: "SWEET TEMPTATIONS: IRRESISTIBLE DESSERT DELIGHTS",
       postDescription:
         "Indulge in mouthwatering desserts that will melt your heart.",
     },
     {
       id: 4,
-      imgSrc: "./assets/image4.jpg",
+      imgSrc: "/assets/image4.jpg",
       postTitle: "FARM-TO-TABLE BLISS: LOCAL PRODUCE, SUSTAINABLE DINING",
       postDescription:
         "Celebrate local produce and sustainable dining with farm-to-table cuisine.",
     },
     {
       id: 5,
-      imgSrc: "./assets/image3.jpg",
+      imgSrc: "/assets/image3.jpg",
       postTitle: "GLOBAL FLAVORS: EXPLORING EXOTIC SPICES IN THE CITY",
       postDescription:
         "Embark on a culinary adventure through diverse global cuisines.",
     },
     {
       id: 6,
-      imgSrc: "./assets/image2.jpg",
+      imgSrc: "/assets/image2.jpg",
       postTitle: "AMSTERDAM'S STREET FOOD DELIGHTS!",
       postDescription:
         "Explore the sizzling flavors of Amsterdam's street food scene",

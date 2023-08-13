@@ -13,19 +13,19 @@ export const Vision = () => {
   const imgArray = [
     {
       id:1,
-      imgSrc: "./assets/team3.jpg",
+      imgSrc: "/assets/team3.jpg",
       name: "JASON",
       role: "Chef & founder",
     },
     {
       id:2,
-      imgSrc: "./assets/team1.jpg",
+      imgSrc: "/assets/team1.jpg",
       name: "KATHIE",
       role: "Sous-chef",
     },
     {
       id:3,
-      imgSrc: "./assets/team2.jpg",
+      imgSrc: "/assets/team2.jpg",
       name: "CANDY",
       role: "Drinks manager",
     },
@@ -130,8 +130,8 @@ export const Vision = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row px-4 lg:px-0 gap-5 lg:gap-10 mb-20 relative">
-          <img src="./assets/image4.jpg" className="lg:w-3/5" alt="" />
-          <img src="./assets/image5.jpg" alt="" className="lg:w-1/3" />
+          <img src="/assets/image4.jpg" className="lg:w-3/5" alt="" />
+          <img src="/assets/image5.jpg" alt="" className="lg:w-1/3" />
         </div>
 
         <div className="flex flex-col lg:flex-row px-4 lg:px-0 lg:gap-20 mb-20">

@@ -5,25 +5,25 @@ import { Footer } from "../components/footer";
 export const Gallery = () => {
   const imgItems = [
     {
-      imgSrc: "./assets/image1.jpg",
+      imgSrc: "/assets/image1.jpg",
     },
     {
-      imgSrc: "./assets/image2.jpg",
+      imgSrc: "/assets/image2.jpg",
     },
     {
-      imgSrc: "./assets/image3.jpg",
+      imgSrc: "/assets/image3.jpg",
     },
     {
-      imgSrc: "./assets/image4.jpg",
+      imgSrc: "/assets/image4.jpg",
     },
     {
-      imgSrc: "./assets/image5.jpg",
+      imgSrc: "/assets/image5.jpg",
     },
     {
-      imgSrc: "./assets/image6.jpg",
+      imgSrc: "/assets/image6.jpg",
     },
     {
-      imgSrc: "./assets/image1new.jpg",
+      imgSrc: "/assets/image1new.jpg",
     },
   ];
   return (
